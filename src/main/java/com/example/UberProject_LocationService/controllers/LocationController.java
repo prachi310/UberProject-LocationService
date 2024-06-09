@@ -40,7 +40,7 @@ public class LocationController {
         }
         }
 
-    @GetMapping("/nearByDriver")
+    @PostMapping("/nearByDriver")
     public ResponseEntity<List<DriverLocationDto>>getNearByDrivers
             (@RequestBody NearByDriverRequestDto nearByDriverRequestDto) {
         try {
